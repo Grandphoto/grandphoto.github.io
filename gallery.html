@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>갤러리 | 천안 그랜드사진관</title>
+<meta name="description" content="그랜드사진관 촬영 사진 갤러리 - 가족사진, 증명사진, 프로필사진, 장수사진, 사진복원">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header"></header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">GALLERY</span>
+    <h1>갤러리</h1>
+    <p>그랜드사진관에서 촬영한 사진들입니다. 사진을 누르면 크게 볼 수 있어요.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:48px">
+  <div class="wrap">
+    <div class="filters">
+      <button data-f="all">전체</button>
+      <button data-f="family">가족사진</button>
+      <button data-f="id">증명·여권</button>
+      <button data-f="profile">프로필</button>
+      <button data-f="special">장수·복원</button>
+    </div>
+    <!--
+      ★ 사진 추가 방법 ★
+      images 폴더에 사진을 넣고, 아래 한 줄을 복사해 파일 이름과 분류(data-cat)만 바꾸세요.
+      <div class="g-item" data-cat="family" data-zoom="가족사진"><img src="images/파일이름.jpg" alt="가족사진" loading="lazy"></div>
+      분류: family(가족) / id(증명) / profile(프로필) / special(장수·복원)
+    -->
+    <div class="gallery">
+      <div class="g-item" data-cat="family" data-zoom="가족사진"><img src="images/family-01.jpg" alt="5인 가족사진" loading="lazy"></div>
+      <div class="g-item" data-cat="profile" data-zoom="프로필사진"><img src="images/profile-01.jpg" alt="프로필사진" loading="lazy"></div>
+      <div class="g-item" data-cat="family" data-zoom="형제자매 가족사진"><img src="images/family-02.jpg" alt="형제자매 가족사진" loading="lazy"></div>
+      <div class="g-item" data-cat="special" data-zoom="장수사진"><img src="images/longevity-01.webp" alt="장수사진" loading="lazy"></div>
+      <div class="g-item" data-cat="id" data-zoom="증명사진"><img src="images/id-photo-01.webp" alt="증명사진" loading="lazy"></div>
+      <div class="g-item no-zoom" data-cat="family"><div class="ph" data-ph="가족사진"></div></div>
+      <div class="g-item" data-cat="special" data-zoom="사진복원 전·후"><img src="images/restore-sample.webp" alt="사진복원 전후 비교" loading="lazy"></div>
+      <div class="g-item no-zoom" data-cat="profile"><div class="ph" data-ph="프로필사진" data-icon="camera"></div></div>
+      <div class="g-item no-zoom" data-cat="family"><div class="ph wide" data-ph="가족사진"></div></div>
+      <div class="g-item no-zoom" data-cat="id"><div class="ph" data-ph="여권사진" data-icon="camera"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>마음에 드는 사진이 있으셨나요?</h2>
+    <p>같은 분위기로 촬영하고 싶으시면 사진을 캡처해서 보내주세요.</p>
+    <div class="btn-row">
+      <a href="location.html#reserve" class="btn btn-primary" data-icon="cal">예약 문의</a>
+      <a data-link="kakao" class="btn btn-ghost" data-icon="chat">카카오톡 상담</a>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+<script src="js/site.js"></script>
+</body>
+</html>
