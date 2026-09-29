@@ -221,8 +221,10 @@ p { margin: 0 0 1em; }
 .mbar { display: none; }
 
 /* ---------- 두 칸 사진 + 설명 ---------- */
-.split-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.split-photos .ph, .split-photos img { aspect-ratio: 4/5; border-radius: 12px; object-fit: cover; width: 100%; }
+.split-photos { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.split-photos .ph, .split-photos img { border-radius: 12px; width: 100%; }
+.split-photos .ph { aspect-ratio: 4/5; }
+.split-photos img { height: auto; box-shadow: var(--shadow); } /* 사진 전체가 보이도록 자르지 않음 */
 .full-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); cursor: zoom-in; }
 .full-img img { width: 100%; }
 .pill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
