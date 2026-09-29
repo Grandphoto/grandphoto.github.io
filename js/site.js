@@ -4,8 +4,8 @@
 const SHOP = {
   name: "그랜드사진관",
   phone: "041-581-2483",            // 대표 전화번호
-  mobile: "010-0000-0000",          // 문자 받을 휴대폰 번호 (예약 문의 양식이 이 번호로 문자를 보냅니다)
-  kakao: "https://pf.kakao.com/",   // 카카오톡 채널 주소
+  mobile: "010-3657-2483",         // 문자 받을 휴대폰 번호 (예약 문의 양식이 이 번호로 문자를 보냅니다)
+  kakao: "http://pf.kakao.com/_GAhixj/chat",   // 카카오톡 채널 주소
   booking: "https://booking.naver.com/", // 네이버 예약 주소 (없으면 "" 로 비워두세요)
   instagram: "https://instagram.com/",
   address: "충청남도 천안시 서북구 성환읍 성환중앙로 36",
